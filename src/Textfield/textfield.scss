@@ -1,0 +1,42 @@
+@import '../utils/constants.scss';
+
+.textfield {
+    padding: 8px;
+    width: 185px;
+    border-radius: 5px;
+    border: 1px solid $gray-black;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.textfield-label {
+    display: block;
+    margin-bottom: 10px;
+    color: $gray-black-text;
+    font-weight: bold;
+
+}
+
+.textfield-label:disabled {
+    color: green;
+}
+
+.textfield:disabled {
+    border: 1px solid $disabled-field;
+}
+
+.valid:focus {
+    border: 1px solid $success;
+    box-shadow:0 0 5px $success-shadow;
+}
+
+.invalid {
+    border: 1px solid $error;
+    box-shadow:0 0 10px $error-shadow ;
+}
+
+.errorText {
+    margin: 0;
+    margin-top: 5px;
+    color: $error;
+}
