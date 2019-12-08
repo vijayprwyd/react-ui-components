@@ -1,0 +1,26 @@
+@import '../utils/constants.scss';
+
+
+.button {
+    padding: 8px 20px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.primary {
+    background-color: $green-color;
+    color: $white;
+}
+
+.primary:hover {
+    background-color: $green-color-hover;
+}
+
+.secondary {
+    background-color: $dark-gray;
+    color: black;
+}
+
+.secondary:hover {
+    background-color: $dark-gray-hover;
+}

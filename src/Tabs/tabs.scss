@@ -1,0 +1,20 @@
+@import '../utils/constants.scss';
+
+.tab-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tab-buttons {
+    margin: 0px 20px;
+    margin-bottom: 10px;;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    min-height: 36px;
+    background-color: inherit;
+}
+
+.tab-active {
+    border-bottom: 2px solid $green-color;
+}
