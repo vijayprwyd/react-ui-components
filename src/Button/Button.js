@@ -3,15 +3,16 @@ import "./button.scss";
 
 const typeClassMapper = {
     primary: "primary",
-    secondary: "secondary"
+    secondary: "secondary",
+    noBorder: "noBorder"
 }
 
 export function Button(props) {
 
-    const {type, children, ...eventHandlers} = props
+    const {type, children, classNames, ...eventHandlers} = props
 
     return (
-        <button className = {`button ${typeClassMapper[type || 'primary']} `} 
+        <button className = {`button ${typeClassMapper[type || 'primary'] } ${classNames || ""} `} 
             {...eventHandlers || {}}
         >
             {children}

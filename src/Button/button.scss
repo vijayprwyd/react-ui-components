@@ -4,12 +4,12 @@
 .button {
     padding: 8px 20px;
     border-radius: 5px;
-    outline: none;
 }
 
 .primary {
     background-color: $green-color;
     color: $white;
+    outline: none;
 }
 
 .primary:hover {
@@ -19,8 +19,13 @@
 .secondary {
     background-color: $dark-gray;
     color: black;
+    outline: none;
 }
 
 .secondary:hover {
     background-color: $dark-gray-hover;
+}
+
+.noBorder {
+    background: none;
 }

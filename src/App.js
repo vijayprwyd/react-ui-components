@@ -8,6 +8,7 @@ import { Button } from './Button/Button';
 import { ColorPicker } from './ColorPicker/ColorPicker';
 import { Card } from './Card/Card';
 import { Checkbox } from './Checkbox/Checkbox';
+import { PageMessage } from './PageMessage/PageMessage';
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
 
   return (
     <div className="App">
+
       <Textfield 
         onChange = {handleChange} 
         isValid = {isValid}
@@ -48,8 +50,6 @@ function App() {
           <Checkbox />
         </div>
 
-
-
       <ToastMessage
       
         message = "Toast Message"
@@ -59,6 +59,31 @@ function App() {
       />
 
       </div>
+
+      <PageMessage
+        style = {{marginBottom: "20px"}}
+        type = "info"
+        titleText = "Info Title"
+      >
+        <div>Hi</div>
+      </PageMessage>
+
+      <PageMessage
+        style = {{marginBottom: "20px"}}
+        type = "error"
+        titleText = "Error Title"
+      >
+        <div>Hi</div>
+      </PageMessage>
+
+      <PageMessage
+        style = {{marginBottom: "20px"}}
+        type = "warn"
+        titleText = "Warn Title"
+    >
+      <div>Hi</div>
+    </PageMessage>
+
 
       <Tabs>
         <Tab title ="First">Child 1</Tab>
