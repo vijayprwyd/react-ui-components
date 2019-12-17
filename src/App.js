@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { Textfield } from './Textfield/Textfield';
 import { Radiobutton } from './Radiobutton/Radiobutton';
 import { ToastMessage } from './ToastMessage/ToastMessage';
@@ -9,6 +9,7 @@ import { ColorPicker } from './ColorPicker/ColorPicker';
 import { Card } from './Card/Card';
 import { Checkbox } from './Checkbox/Checkbox';
 import { PageMessage } from './PageMessage/PageMessage';
+import { Drawer } from './Drawer/Drawer';
 
 function App() {
 
@@ -32,8 +33,15 @@ function App() {
     color: 'black'
   }]
 
+
+  const [show, setShow] = useState(true);
+
+  useEffect(() => {
+
+  }, [show]);
+
   return (
-    <div className="App">
+   /* <div className="App">
 
       <Textfield 
         onChange = {handleChange} 
@@ -117,9 +125,17 @@ function App() {
 
     </div>
 
-    </div>
+    </div>*/
 
-    
+    <>
+        <button onClick = {() => setShow(!show)}>Open</button>
+        {show && <Drawer>
+            <div style = {{ width: "500px", height: "200px"}}> 
+
+            </div>
+          
+          </Drawer>}
+    </>
   );
 }
 

@@ -1,0 +1,46 @@
+@import '../utils/constants.scss';
+
+.drawer-container {
+    height: 100%;
+    position: fixed;
+    transition:  max-width 0.1s ;
+    right:0;
+    //box-sizing: border-box;
+}
+
+.drawer-close {
+}
+
+.drawer-show {
+    border-left: 1px solid $light-gray;
+    max-width: 100%;
+
+}
+
+.drawer-hide {
+    max-width: 0%;
+}
+
+.drawer-body {
+    padding: 20px;
+}
+
+.drawer-header {
+    display: flex;
+    width: inherit;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+
+.drawer-icon {
+
+}
+
+.swipe-right {
+    left: -30px;
+    border-radius: 5px;
+    position: absolute;
+    background-color: $light-gray;
+    padding: 0 10px;
+    outline: none;
+}
