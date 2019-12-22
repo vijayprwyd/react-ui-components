@@ -10,6 +10,7 @@ import { Card } from './Card/Card';
 import { Checkbox } from './Checkbox/Checkbox';
 import { PageMessage } from './PageMessage/PageMessage';
 import { Drawer } from './Drawer/Drawer';
+import { Modal } from './Modal/Modal';
 
 function App() {
 
@@ -41,7 +42,7 @@ function App() {
   }, [show]);
 
   return (
-   /* <div className="App">
+   <div className="App">
 
       <Textfield 
         onChange = {handleChange} 
@@ -125,17 +126,19 @@ function App() {
 
     </div>
 
-    </div>*/
 
-    <>
-        <button onClick = {() => setShow(!show)}>Open</button>
+    <button onClick = {() => setShow(!show)}>Open</button>
         {show && <Drawer>
             <div style = {{ width: "500px", height: "200px"}}> 
 
             </div>
           
           </Drawer>}
-    </>
+          <Modal dismissable>
+            <div>Hi</div>
+          </Modal>
+          
+    </div>
   );
 }
 

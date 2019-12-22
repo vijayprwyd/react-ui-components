@@ -1,5 +1,6 @@
 import React from "react";
 import "./button.scss";
+import { Ripples } from "../Ripples/Ripples";
 
 const typeClassMapper = {
     primary: "primary",
@@ -13,9 +14,10 @@ export function Button(props) {
 
     return (
         <button className = {`button ${typeClassMapper[type || 'primary'] } ${classNames || ""} `} 
-            {...eventHandlers || {}}
+            {...eventHandlers || {}} ripple = "ripple"
         >
-            {children}
+            Hi
+            <Ripples/>
         </button>
     );
 }

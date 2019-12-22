@@ -7,6 +7,7 @@
   display: block;
   cursor: pointer;
   padding-bottom: 10px;
+  display: table;
 }
 
 .radio-container input, .checkbox-container input {
@@ -71,5 +72,4 @@
 
 .checkbox-checkmark {
   border-radius: 2px;
-
 }
